@@ -1,0 +1,33 @@
+{
+  "name": "panable",
+  "version": "0.0.1",
+  "description": "custom pan gesture for react element",
+  "main": "lib/index.js",
+  "scripts": {
+    "example": "parcel examples/index.html",
+    "test:watch": "jest --config jest.config.js --watch",
+    "test": "jest --config jest.config.js",
+    "build": "tsc",
+    "dev": "tsc -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/guoshencheng/tapablex.git"
+  },
+  "keywords": [
+    "tap", "react"
+  ],
+  "author": "guoshencheng",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/guoshencheng/tapablex/issues"
+  },
+  "homepage": "https://github.com/guoshencheng/tapablex#readme",
+  "devDependencies": {
+    "@types/jest": "^23.3.10",
+    "jest": "^23.6.0",
+    "ts-jest": "^23.10.5",
+    "tslint": "^5.12.0",
+    "typescript": "^3.2.2"
+  }
+}

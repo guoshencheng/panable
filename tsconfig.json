@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "outDir": "./lib",
+    "strictNullChecks": true,
+    "moduleResolution": "node",
+    "jsx": "react",
+    "noUnusedParameters": true,
+    "noUnusedLocals": true,
+    "allowSyntheticDefaultImports":true,
+    "target": "ES5",
+    "noImplicitAny": true,
+    "declaration": true,
+    "lib": [ "es2015", "dom" ]
+  },
+  "exclude": [
+    "node_modules",
+    "lib"
+  ],
+  "include": [ "src/**/*"],
+  "compileOnSave": false
+}
