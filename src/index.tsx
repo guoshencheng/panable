@@ -31,11 +31,12 @@ export type TouchObject = {
 }
 
 export type PropTypes = {
-  className: string,
-  style: React.CSSProperties,
-  onPanStop: () => void,
-  onPanStart: (touchObject: TouchObject) => void
-  onPan: (touchObject: TouchObject) => void
+  children?: JSX.Element,
+  className?: string,
+  style?: React.CSSProperties,
+  onPanStop?: () => void,
+  onPanStart?: (touchObject: TouchObject) => void
+  onPan?: (touchObject: TouchObject) => void
 }
 
 export default class Pan extends React.PureComponent<PropTypes> {
@@ -134,7 +135,7 @@ export default class Pan extends React.PureComponent<PropTypes> {
   }
 
   render() {
-    const { className, style, onPan, onPanStart, onPanStop, ...args } = this.props
+    const { className, style, onPan, onPanStart, onPanStop, children, ...args } = this.props
     const touchEvents = this.getTouchEvents()
     const mouseEvents = this.getMouseEvents()
     return (
@@ -146,7 +147,7 @@ export default class Pan extends React.PureComponent<PropTypes> {
         style={{
           ...style,
           touchAction: 'pinch-zoom pan-x',
-        }} />
+        }} >{children}</div>
     )
   }
 }
